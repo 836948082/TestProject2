@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/span_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/underline_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下划线" />
+
+        <Button
+            android:id="@+id/strike_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除线" />
+
+        <Button
+            android:id="@+id/style_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粗体、斜体" />
+
+        <Button
+            android:id="@+id/font_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字号" />
+
+        <Button
+            android:id="@+id/color_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文字颜色" />
+
+        <Button
+            android:id="@+id/color_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文字背景颜色" />
+
+        <Button
+            android:id="@+id/url_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超链接" />
+
+        <Button
+            android:id="@+id/image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片" />
+
+        <Button
+            android:id="@+id/maskfilte_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修饰效果" />
+
+        <Button
+            android:id="@+id/Rasterizer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="光栅效果" />
+
+        <Button
+            android:id="@+id/spannablestringbuilder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初始化" />
+    </LinearLayout>
+</ScrollView>

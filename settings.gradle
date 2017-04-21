@@ -1,0 +1,1 @@
+include ':app', ':vorolaylibrary', ':library', ':viewspreadtranslationlibrary', ':boomparticlelibrary', ':avatarlabelviewlibrary', ':switchiconviewlibrary', ':coverflowlibrary', ':sweetalertdialoglibrary', ':tagsedittextlibrary'

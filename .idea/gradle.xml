@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/avatarlabelviewlibrary" />
+            <option value="$PROJECT_DIR$/boomparticlelibrary" />
+            <option value="$PROJECT_DIR$/coverflowlibrary" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/sweetalertdialoglibrary" />
+            <option value="$PROJECT_DIR$/switchiconviewlibrary" />
+            <option value="$PROJECT_DIR$/tagsedittextlibrary" />
+            <option value="$PROJECT_DIR$/viewspreadtranslationlibrary" />
+            <option value="$PROJECT_DIR$/vorolaylibrary" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

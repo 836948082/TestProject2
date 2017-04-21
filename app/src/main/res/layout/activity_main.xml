@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/llv"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/vorolay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="罗诺伊图" />
+
+        <Button
+            android:id="@+id/spread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扩展动画" />
+
+        <Button
+            android:id="@+id/boomparticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="粒子粉碎效果" />
+
+        <Button
+            android:id="@+id/avatarlabelview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Label(贴纸效果)" />
+
+        <Button
+            android:id="@+id/logintransition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录转场动画" />
+
+        <Button
+            android:id="@+id/switchicon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图标效果开关控件" />
+
+        <Button
+            android:id="@+id/randomtextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="滚动显示TextView的数字,支持自定义每个字符速度" />
+
+        <Button
+            android:id="@+id/baiduloading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="仿百度加载动画" />
+
+        <Button
+            android:id="@+id/coverflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片墙(CoverFlow)水平滑动效果" />
+
+        <Button
+            android:id="@+id/checkvisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="checkvisible" />
+
+        <Button
+            android:id="@+id/horizontalListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="水平自动循环滚动ListView" />
+
+        <Button
+            android:id="@+id/sweetalertdialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SweetAlertDialog" />
+
+        <Button
+            android:id="@+id/jump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jump" />
+
+        <Button
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="线程池测试" />
+
+        <Button
+            android:id="@+id/spannable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="spannable" />
+
+        <Button
+            android:id="@+id/tagsedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标签输入控件" />
+
+        <Button
+            android:id="@+id/snacky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="透明指示层 (HUD)" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.runtai.testproject2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.vorolay.VorolayActivity" />
+        <activity android:name=".activity.vorolay.SimpleListActivity" />
+        <activity android:name=".activity.vorolay.CustomRegionsActivity" />
+        <activity android:name=".activity.vorolay.AddRegionsActivity" />
+        <activity android:name=".activity.vorolay.SimpleDiagramActivity" />
+        <activity android:name=".activity.vorolay.SettingsActivity" />
+
+        <activity android:name=".activity.viewspread.ViewSpreadActivity" />
+        <activity android:name=".activity.viewspread.SecondActivity" />
+
+        <activity android:name=".activity.BoomParticleActivity" />
+
+        <activity android:name=".activity.AvatarLabelViewActivity" />
+
+        <activity android:name=".activity.logintransition.LoginTransitionActivity" />
+        <activity android:name=".activity.logintransition.LoginTransitionSecondActivity" />
+
+        <activity android:name=".activity.SwitchIconViewActivity" />
+
+        <activity android:name=".activity.RandomTextViewActivity" />
+
+        <activity android:name=".activity.baiduload.BaiduLoadingActivity" />
+
+        <activity android:name=".activity.coverflow.CoverFlowActivity" />
+
+        <activity android:name=".activity.checkvisible.CheckVisibleActivity" />
+
+        <activity android:name=".activity.HorizontalListViewActivity" />
+
+        <activity android:name=".activity.SweetAlertDialogActivity" />
+
+
+        <activity android:name=".activity.JumpActivity" />
+        <activity android:name=".TestActivity" />
+
+        <activity android:name=".activity.SpannableStringActivity" />
+
+        <activity android:name=".activity.TagsEditTextActivity" />
+
+        <receiver android:name=".receive.TestReceive">
+            <intent-filter>
+                <action android:name="com.runtai.testproject2" />
+                <action android:name="com.runtai.testproject20" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

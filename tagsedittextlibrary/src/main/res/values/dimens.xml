@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="defaultTagsTextSize">16sp</dimen>
+    <dimen name="defaultTagsCloseImagePadding">10dp</dimen>
+    <dimen name="defaultTagsPadding">0dp</dimen>
+</resources>

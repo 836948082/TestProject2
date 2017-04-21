@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.baiduload.BaiduLoadingActivity">
+
+    <com.runtai.testproject2.activity.baiduload.BaiduProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" />
+
+    <com.runtai.testproject2.activity.baiduload.BaiduProgressBar2
+        android:layout_width="500px"
+        android:layout_height="100px"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" />
+
+    <com.runtai.testproject2.activity.baiduload.BaiduLoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" />
+
+    <com.runtai.testproject2.activity.baiduload.BaiduProgressLoading
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center" />
+</LinearLayout>

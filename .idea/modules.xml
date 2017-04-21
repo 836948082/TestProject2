@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TestProject2.iml" filepath="$PROJECT_DIR$/TestProject2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avatarlabelviewlibrary/avatarlabelviewlibrary.iml" filepath="$PROJECT_DIR$/avatarlabelviewlibrary/avatarlabelviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boomparticlelibrary/boomparticlelibrary.iml" filepath="$PROJECT_DIR$/boomparticlelibrary/boomparticlelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coverflowlibrary/coverflowlibrary.iml" filepath="$PROJECT_DIR$/coverflowlibrary/coverflowlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweetalertdialoglibrary/sweetalertdialoglibrary.iml" filepath="$PROJECT_DIR$/sweetalertdialoglibrary/sweetalertdialoglibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/switchiconviewlibrary/switchiconviewlibrary.iml" filepath="$PROJECT_DIR$/switchiconviewlibrary/switchiconviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tagsedittextlibrary/tagsedittextlibrary.iml" filepath="$PROJECT_DIR$/tagsedittextlibrary/tagsedittextlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewspreadtranslationlibrary/viewspreadtranslationlibrary.iml" filepath="$PROJECT_DIR$/viewspreadtranslationlibrary/viewspreadtranslationlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vorolaylibrary/vorolaylibrary.iml" filepath="$PROJECT_DIR$/vorolaylibrary/vorolaylibrary.iml" />
+    </modules>
+  </component>
+</project>
