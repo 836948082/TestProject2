@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/gallery_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.runtai.testproject2.activity.image_gallery.GalleryView
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/previewParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/preview_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <com.runtai.testproject2.activity.image_gallery.TransSmallImageView
+            android:id="@+id/transImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <com.runtai.testproject2.activity.image_gallery.TransBigImageView
+            android:id="@+id/transBigImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+    </FrameLayout>
+</FrameLayout>

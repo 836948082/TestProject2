@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.runtai.testproject2.R;
 
@@ -42,7 +43,7 @@ public class HorizontalListViewAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int index, View view, ViewGroup parent) {
+    public View getView(final int index, View view, ViewGroup parent) {
         ViewHolder holder;
         if (view == null) {
             holder = new ViewHolder();
@@ -53,10 +54,16 @@ public class HorizontalListViewAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
         holder.hori_bt.setText(list.get(index));
+        holder.hori_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, list.get(index), Toast.LENGTH_SHORT).show();
+            }
+        });
         return view;
     }
 
-    static class ViewHolder{
+    static class ViewHolder {
         TextView hori_bt;
     }
 

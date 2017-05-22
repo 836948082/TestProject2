@@ -111,9 +111,15 @@
             android:text="标签输入控件" />
 
         <Button
-            android:id="@+id/snacky"
+            android:id="@+id/image_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="透明指示层 (HUD)" />
+            android:text="特殊的瀑布流" />
+
+        <Button
+            android:id="@+id/fastblur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="高斯模糊" />
     </LinearLayout>
 </ScrollView>

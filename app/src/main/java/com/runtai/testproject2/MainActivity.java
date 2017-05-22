@@ -22,6 +22,8 @@ import com.runtai.testproject2.activity.TagsEditTextActivity;
 import com.runtai.testproject2.activity.baiduload.BaiduLoadingActivity;
 import com.runtai.testproject2.activity.checkvisible.CheckVisibleActivity;
 import com.runtai.testproject2.activity.coverflow.CoverFlowActivity;
+import com.runtai.testproject2.activity.fastblur.FastBlurActivity;
+import com.runtai.testproject2.activity.image_gallery.ImageGalleryActivity;
 import com.runtai.testproject2.activity.logintransition.LoginTransitionActivity;
 import com.runtai.testproject2.activity.viewspread.ViewSpreadActivity;
 import com.runtai.testproject2.activity.vorolay.VorolayActivity;
@@ -31,7 +33,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private Button vorolay, spread, boomparticle, avatarlabelview, logintransition, switchicon, randomtextview,
             baiduloading, coverflow, checkvisible, horizontalListView, sweetalertdialog, jump, test, spannable,
-            tagsedittext, snacky;
+            tagsedittext, image_gallery, fastblur;
     private Intent intent;
     private long exitTime = 0;
 
@@ -80,8 +82,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         spannable.setOnClickListener(this);
         tagsedittext = (Button) findViewById(R.id.tagsedittext);
         tagsedittext.setOnClickListener(this);
-        snacky = (Button) findViewById(R.id.snacky);
-        snacky.setOnClickListener(this);
+        image_gallery = (Button) findViewById(R.id.image_gallery);
+        image_gallery.setOnClickListener(this);
+        fastblur = (Button) findViewById(R.id.fastblur);
+        fastblur.setOnClickListener(this);
     }
 
     @Override
@@ -162,8 +166,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 intent = new Intent(MainActivity.this, TagsEditTextActivity.class);
                 skip(intent);
                 break;
-            case R.id.snacky:
-                intent = new Intent(MainActivity.this, TagsEditTextActivity.class);
+            case R.id.image_gallery:
+                intent = new Intent(MainActivity.this, ImageGalleryActivity.class);
+                skip(intent);
+                break;
+            case R.id.fastblur:
+                intent = new Intent(MainActivity.this, FastBlurActivity.class);
                 skip(intent);
                 break;
             default:

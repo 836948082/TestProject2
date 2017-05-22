@@ -31,7 +31,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="描述：线程测试,日期：2017/3/21时间16:05,作者：高炎鹏,日期：2017/3/23时间10:52,描述：,描述：标签输入控件,日期：2017/3/23时间15:00" />
+      <option name="myAdditionalJavadocTags" value="描述：线程测试,日期：2017/3/21时间16:05,作者：高炎鹏,日期：2017/3/23时间10:52,描述：,描述：标签输入控件,日期：2017/3/23时间15:00,日期：2017/5/20时间11:17,描述：ImageGallery-master,描述：特殊的瀑布流-master,描述：特殊的瀑布流" />
     </inspection_tool>
     <inspection_tool class="LoggerInitializedWithForeignClass" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
