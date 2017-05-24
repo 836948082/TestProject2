@@ -59,6 +59,7 @@
         <activity android:name=".activity.TagsEditTextActivity" />
         <activity android:name=".activity.image_gallery.ImageGalleryActivity" />
         <activity android:name=".activity.fastblur.FastBlurActivity" />
+        <activity android:name=".activity.SpinnerLoadingActivity" />
 
         <receiver android:name=".receive.TestReceive">
             <intent-filter>

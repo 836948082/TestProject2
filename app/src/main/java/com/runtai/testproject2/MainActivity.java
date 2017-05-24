@@ -16,6 +16,7 @@ import com.runtai.testproject2.activity.HorizontalListViewActivity;
 import com.runtai.testproject2.activity.JumpActivity;
 import com.runtai.testproject2.activity.RandomTextViewActivity;
 import com.runtai.testproject2.activity.SpannableStringActivity;
+import com.runtai.testproject2.activity.SpinnerLoadingActivity;
 import com.runtai.testproject2.activity.SweetAlertDialogActivity;
 import com.runtai.testproject2.activity.SwitchIconViewActivity;
 import com.runtai.testproject2.activity.TagsEditTextActivity;
@@ -33,7 +34,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private Button vorolay, spread, boomparticle, avatarlabelview, logintransition, switchicon, randomtextview,
             baiduloading, coverflow, checkvisible, horizontalListView, sweetalertdialog, jump, test, spannable,
-            tagsedittext, image_gallery, fastblur;
+            tagsedittext, image_gallery, fastblur, spinner_loading;
     private Intent intent;
     private long exitTime = 0;
 
@@ -86,6 +87,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         image_gallery.setOnClickListener(this);
         fastblur = (Button) findViewById(R.id.fastblur);
         fastblur.setOnClickListener(this);
+        spinner_loading = (Button) findViewById(R.id.spinner_loading);
+        spinner_loading.setOnClickListener(this);
     }
 
     @Override
@@ -172,6 +175,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.fastblur:
                 intent = new Intent(MainActivity.this, FastBlurActivity.class);
+                skip(intent);
+                break;
+            case R.id.spinner_loading:
+                intent = new Intent(MainActivity.this, SpinnerLoadingActivity.class);
                 skip(intent);
                 break;
             default:
