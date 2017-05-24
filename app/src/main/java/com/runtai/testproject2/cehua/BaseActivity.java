@@ -134,6 +134,9 @@ public abstract class BaseActivity extends BaseFragmentActivity {
     protected abstract int getView();
     protected abstract void initView();
 
+    /**
+     * 以下实现点击编辑框外空白位置 隐藏软键盘
+     */
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
