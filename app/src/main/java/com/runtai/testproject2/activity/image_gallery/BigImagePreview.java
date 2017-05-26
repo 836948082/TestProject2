@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +15,11 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.runtai.testproject2.R;
+import com.runtai.testproject2.cehua.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -204,15 +207,51 @@ public class BigImagePreview extends RelativeLayout {
             imageView.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    pager.setVisibility(View.GONE);
-                    List<Float> info = galleryView.getChildInfo(i);
-                    mTransSmallImageView.exit((int) (info.get(0) / 1),
-                            (int) (info.get(1) / 1), info.get(2), info.get(3));
+                    if (firstClickTime > 0) {
+                        secondClickTime = System.currentTimeMillis();
+                        if (secondClickTime - firstClickTime < 200) {
+                            Log.e("双击回调", "doubleClick");
+                            firstClickTime = 0;
+                            isDoubleClick = true;
+                            return;
+                        }
+                    }
+                    firstClickTime = System.currentTimeMillis();
+                    isDoubleClick = false;
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                Thread.sleep(200);
+                                firstClickTime = 0;
+                                if (!isDoubleClick) {
+                                    Log.e("单击回调", "singleClick");
+                                    ((BaseActivity) mContext).runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Toast.makeText(mContext, "单击回调", Toast.LENGTH_SHORT).show();
+                                            pager.setVisibility(View.GONE);
+                                            List<Float> info = galleryView.getChildInfo(i);
+                                            mTransSmallImageView.exit((int) (info.get(0) / 1),
+                                                    (int) (info.get(1) / 1), info.get(2), info.get(3));
+                                        }
+                                    });
+                                }
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+
+                        }
+                    }).start();
                 }
             });
             return imageView;
         }
     }
+
+    private long firstClickTime = 0;
+    private long secondClickTime = 0;
+    private boolean isDoubleClick;
 
     private int getScreenWidth() {
         WindowManager wm = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
